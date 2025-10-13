@@ -89,5 +89,10 @@ rendezes = sorted
     print(veletlen szamok, szamok)
     print(rendezes, sorban)
 
+# Lemásolni a github-os repository tartalmát (pull)
+# Házi elkészítése
+# add, commit, push
+
+
 
 
