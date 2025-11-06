@@ -1,12 +1,12 @@
 import random
+import math
 # kérjen be egy egész számot és döntse el, hogy páros vagy páratlan?
 
 szam = int(input("Adjon meg egy egész számot:"))
-if(szam % 2 == 0):
+if(szam % 2 == 0): 
     print("páros")
 else: # szam % != 0
     print("páratlan")
-
 # kérjen be a felhasználótól egy számot és mondja meg, hogy 10-zel osztható -e? Ha nem osztható 10-zel írja ki az utolsó számjegyét!
 # pl. be: 10 ki: tízzel osztható
 # pl. be: 12 ki: tízzel nem osztható, utolsó számjegy 2
@@ -83,12 +83,12 @@ else:
 # Van-e közöttük 4-el végződő? 
 
 
-szam = random.randint (100; 999)
-if szam = % 13 == 0 :
+szamok = random.randint (100, 999)
+if szam  % 13 == 0 :
     print(szamok)
 rendezes = sorted
-    print(veletlen szamok, szamok)
-    print(rendezes, sorban)
+print(veletlen, szamok, szamok)
+print(rendezes, sorban)
 
 # Lemásolni a github-os repository tartalmát (pull)
 # Házi elkészítése
@@ -106,7 +106,7 @@ szamjegy = int(input("adjon meg egy számjegyet"))
 
 print(a,b,c)
 
-if(a % 10 == szamjegy or b % 10 == szamjegy or c % 10 == szamjegyre):
+if(a % 10 == szamjegy or b % 10 == szamjegy or c % 10 == szamjegy):
     print("Van közte "+str(szamjegy)+" -re végződő")
 else: 
     print("Nincs közte "+str(szamjegy)+"-re végződő")

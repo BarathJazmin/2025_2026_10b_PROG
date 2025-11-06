@@ -1,3 +1,5 @@
+import random
+
 # lebegőpontos - float - tört
 a = 5/4
 b = float(input("adjon meg egy tizedes törtet: "))
