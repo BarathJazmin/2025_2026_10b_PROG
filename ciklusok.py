@@ -66,12 +66,14 @@ for index in range(0, len(szoveg), 1):
     print(str(index+1)+szoveg[index], end =" ")
 print()
 
+
 # írasson ki 5db véletlen karaktert a szövegből!
 
 for db in range(0,5,1):
     szam = r.randint(0,3)
     print(szoveg[szam],end =" ")
 print()
+
 
 
 
