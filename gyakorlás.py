@@ -23,4 +23,3 @@ if(index < len(sz)-1):
 else:
     print("Nincs benne cs")
 
-# hf : De Morgan azonosság 
