@@ -1,3 +1,52 @@
+"""
+lista - dinaamikus
+    - tudunk bele új elemet rakni, ezzel nő az elemszáma
+    - tudunk belőle törölni, ezzel csökken az elemsáma
+    - lekérhető bármelyik eleme
+    -módosítható bármelyik elem
+deklarálás + inicializálás:
+létrehozás + kezdőérték adás:
+lista_neve =[]
+új elem hozzáadása:
+lista_neve.append(uj elem)
+elem törlése:
+lista_neve.remove(elem)
+beégett lista:
+lista_neve = [3,2,5,7,1]
+lista hossza:
+len(lista_neve)
+"""
+szamok = [3,2,5,7,1]
+print(szamok)
+print("első elem:", szamok[0])
+print("lista hossza:",len(szamok))
+print("utolsó elem:", szamok[len(szamok)-1])
+
+
+# hf: 
+
+#tölts fel egy 13 elemű listát [0,20] közötti véletlen számmal 
+# számok átlaga?
+# hány darab páros szám van a listában?
+# van e benne nulla ? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # A szövegben van e sz betű?
 szoveg ="poros"
 dube = "ny"       #duplabetu
@@ -23,3 +72,11 @@ if(ujszoveg == szoveg):
     print("A szoveg palindrom")
 else:
     print("A szoveg nem palidrom")
+
+j = 0
+while(j<len(szoveg)/2 and szoveg[j] == szoveg[len(szoveg)-1-j]):
+    j+=1
+if(j<len(szoveg)/2):
+    print("A szoveg nem palidrom")
+else: 
+    print("A szoveg palindrom")
