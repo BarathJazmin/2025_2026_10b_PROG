@@ -31,10 +31,12 @@ print("utolsó elem:", szamok[len(szamok)-1])
 n = 13
 
 lista = []
-
-for index in range(0,13,1) :
+for index in range(0,n,1) :
     a = random.randint(0,20)
     lista.append(a)
+
+# Egy lépésben:
+#lista.append(random.randint(0,20))
 
 print(lista)
 
