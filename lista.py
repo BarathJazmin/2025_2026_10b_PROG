@@ -40,6 +40,12 @@ for index in range(0,n,1) :
 
 print(lista)
 
+# Számok átlaga (összeadjuk a számokat és elosszuk az összeget a számok darabszámával)
+
+for index in range(0,len(lista),1):
+    osszeg += lista[index]
+print(osszeg)
+
 
 
 
