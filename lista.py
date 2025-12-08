@@ -1,3 +1,4 @@
+import random
 """
 lista - dinaamikus
     - tudunk bele új elemet rakni, ezzel nő az elemszáma
@@ -23,12 +24,25 @@ print("lista hossza:",len(szamok))
 print("utolsó elem:", szamok[len(szamok)-1])
 
 
-# hf: 
 
-#tölts fel egy 13 elemű listát [0,20] közötti véletlen számmal 
-# számok átlaga?
-# hány darab páros szám van a listában?
-# van e benne nulla ? 
+# Töltsön fel egy 13 elemű listát [0,20] közötti véletlen számmal
+
+#elemszam
+n = 13
+
+lista = []
+
+for index in range(0,13,1) :
+    a = random.randint(0,20)
+    lista.append(a)
+
+print(lista)
+
+
+
+
+
+
 
 
 
