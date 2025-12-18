@@ -45,7 +45,7 @@ for kiskutya in range(0,db,1):
 
 # for karakter in szöveg:
 
-db = 8
+db = 0
 szoveg = "kalapács"
 print(szoveg)
 for karakter in szoveg:
