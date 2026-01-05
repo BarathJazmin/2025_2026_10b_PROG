@@ -30,6 +30,15 @@ print("Háromra végződő", haromra)
 print("Ötre végződő", otre)
 print("Hétre végződő", hetre)
 
+# Számtani átlag
+# MI a mértani átlak, plusz eg megoldása
+# a mértani átlag alatti számok összege
+
+# 30db 13,17- re végzödő számokkal, hány 13-mal és 17-tel osztható van 
+# Bekérsz egy hosszabb szöveget, hány darab  felhasználó által megadott betű van benne?
+# Bekérsz két szót, mond meg adott indexen hány darab betű eltérés van ? (pl: alma,alkat -> 2db különbség)
+
+
 
 
 
