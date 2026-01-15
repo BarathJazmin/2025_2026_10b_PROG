@@ -44,6 +44,7 @@ def osszeadasVisszateressel(a,b):
     return c
 
 print(osszeadasVisszateressel(13,17))
+print(osszeadasVisszateressel(11,10))
 
 
 
