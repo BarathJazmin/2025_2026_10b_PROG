@@ -47,7 +47,6 @@ print(osszeadasVisszateressel(13,17))
 print(osszeadasVisszateressel(11,10))
 
 
-# Készítsen egy függvény, ami függ egy szövegtől, és kiírja a szót visszafele
 
 
 
