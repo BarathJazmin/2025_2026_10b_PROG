@@ -30,20 +30,83 @@ def negativ00raVegzodo(barmilyenLista):
     return db 
 
 
-def main():
-    lista1 = veletlenlista(13)
-    print(lista1)
-    lista2 = veletlenlista(5)
-    print(lista2)
 
-    negativ00ravegzodo(lista1)
 
-main()
+#Házifeladat:
+
+def listaAtlaga(lista):
+    osszeg = 0
+    for i in range(0,len(lista),1):
+        osszeg += lista[i]
+    atlag = osszeg / len(lista)
+    return atlag
+
+
+
+# masodik feladat
+
+def pozitivSzamokAtlaga(lista):
+    db = 0
+    osszeg = 0
+    for elem in lista:       # Végig megyünk a lista összes elemén
+        if elem > 0 :         # Ha pozitiv az aktuális szám,akkor
+            db += 1              # a db változót növeljük 1-gyel
+        osszeg += elem
+    atlag = osszeg / db
+    return atlag
+
+
+def maximumIndex(lista):
+    maxi = 0
+    for i in range(1,len(lista),1):
+        if (lista[i] > lista[maxi]):
+            maxi = i
+    return maxi
+
+
+# Írjon függvényt ami viszaadja a listánk terjeelmét. Terjedelem = maximum-minimum
+
+maxi = 0
+mini = 0
+
+def Terjedelem(lista):
+    for i in range(1,lista,1):
+        if lista[i] > lista[maxi]:
+        maxi = mini
+    return maxi(lista), return mini(lista)
+
+
+
+
+
+
 
 
 
 
    
 
-        
 
+
+
+def main():
+    lista1 = veletlenlista(13)
+    print(lista1)
+    lista2 = veletlenlista(5)
+    print(lista2)
+
+    print(negativ00-raVegzododo(lista1))
+
+    
+    listaatlaga = listaAtlag(lista1)
+    print("az elso lista atlaga: ", listaatlaga)
+    print("a masodik lista átlaga. " , listaAtlaga(lista2))
+
+    print("Az első lista pozitív számainak átlaga: ", pozitivSzamokAtlaga(lista1))
+    print("Az második lista pozitív számainak átlaga: ", pozitivSzamokAtlaga(lista2))
+
+    maxIndexLista1 = maximumIndex(lista1)
+    print("Első lista legnagyobb elem helye:", maxIndexLista1+1)
+
+
+main()
