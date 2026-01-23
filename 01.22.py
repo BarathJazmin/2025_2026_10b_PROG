@@ -84,9 +84,6 @@ def Terjedelem(lista):
 
 
 
-   
-
-
 
 
 def main():
@@ -107,6 +104,8 @@ def main():
 
     maxIndexLista1 = maximumIndex(lista1)
     print("Első lista legnagyobb elem helye:", maxIndexLista1+1)
+
+    
 
 
 main()
