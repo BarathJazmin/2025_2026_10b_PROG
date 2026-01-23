@@ -66,16 +66,15 @@ def maximumIndex(lista):
 
 # Írjon függvényt ami viszaadja a listánk terjeelmét. Terjedelem = maximum-minimum
 
-maxi = 0
-mini = 0
-
-def Terjedelem(lista):
-    for i in range(1,lista,1):
-        if lista[i] > lista[maxi]:
-        maxi = mini
-    return maxi(lista), return mini(lista)
-
-
+def terjedelem(lista):
+    maxe = lista[0]
+    for i in range(1,len(lista),1):
+        if (lista[i] > maxe):
+            maxe = lista[i]
+        if(lista[i] < mine):
+            mine = lista[i]
+terjedelem = maxe - mine
+return terjedelem
 
 
 
@@ -105,7 +104,7 @@ def main():
     maxIndexLista1 = maximumIndex(lista1)
     print("Első lista legnagyobb elem helye:", maxIndexLista1+1)
 
-    
+
 
 
 main()
