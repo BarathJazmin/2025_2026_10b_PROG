@@ -66,15 +66,29 @@ def maximumIndex(lista):
 
 # Írjon függvényt ami viszaadja a listánk terjeelmét. Terjedelem = maximum-minimum
 
-def terjedelem(lista):
+def maximumErtek(lista):
     maxe = lista[0]
     for i in range(1,len(lista),1):
         if (lista[i] > maxe):
             maxe = lista[i]
-        if(lista[i] < mine):
+    return maxe    
+
+def minimumErtek(lista):
+    mine = lista[0]
+    for i in range(1,len(lista),1):
+        if (lista[i] < mine):
             mine = lista[i]
-terjedelem = maxe - mine
-return terjedelem
+    return mine   
+
+
+
+def terjedelem(lista):
+    maxe = maximumErtek(lista)
+    mine = minimumErteke(lista)
+    return maxe - mine
+
+
+
 
 
 
@@ -91,18 +105,22 @@ def main():
     lista2 = veletlenlista(5)
     print(lista2)
 
-    print(negativ00-raVegzododo(lista1))
+    # print(negativ00-raVegzododo(lista1))
 
     
-    listaatlaga = listaAtlag(lista1)
-    print("az elso lista atlaga: ", listaatlaga)
-    print("a masodik lista átlaga. " , listaAtlaga(lista2))
+    # listaatlaga = listaAtlag(lista1)
+    # print("az elso lista atlaga: ", listaatlaga)
+    # print("a masodik lista átlaga. " , listaAtlaga(lista2))
 
     print("Az első lista pozitív számainak átlaga: ", pozitivSzamokAtlaga(lista1))
     print("Az második lista pozitív számainak átlaga: ", pozitivSzamokAtlaga(lista2))
 
     maxIndexLista1 = maximumIndex(lista1)
     print("Első lista legnagyobb elem helye:", maxIndexLista1+1)
+
+    print("lista1 maximum:",maximumErtek(lista1))
+    print("lista1 minimum:",minimumErtek(lista1))
+    print("")
 
 
 
