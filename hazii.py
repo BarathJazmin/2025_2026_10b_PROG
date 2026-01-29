@@ -72,4 +72,5 @@ def main():
         ("Jancsinak nincs 4.9 és 5.1 közötti értéke")
 
 
+
 main()
