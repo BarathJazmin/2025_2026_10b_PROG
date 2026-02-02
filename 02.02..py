@@ -21,14 +21,37 @@ def kartyaGeneralas():
     return lista
 
 
+def keveres(pakli):
+    for i in range(10):
+        a = random.randint(0,len(pakli)-1)
+        b = random.randint(0,51)
+        sv = pakli[a]
+        pakli[a] = pakli[b]
+        pakli[b] = sv
 
 
+
+def lapIndexe(lap, pakli):
+    index = 0
+    while(pakli[index] != lap):
+        index += 1
+    return index
 
 
 
 def main():
-    kartyak = kartyaGeneralas
+    pakli = kartyaGeneralas()
+    keveres(pakli)
+    print(pakli)
+    lap = input("Adjon meg egy lapot - T,P,S,K + [1,13] (pl.: P1):")
+    index = lapIndexe("S1", pakli)
+    print(index)
 
 
 
 main()
+
+
+
+
+# HF :
