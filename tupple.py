@@ -28,7 +28,6 @@ def maxIndex2(szamok, honapok):
 
 
 
-
 def main():
     honapok = ["Január","Február","Március","Április","Május","Június","Július","Augusztus","Szeptember","Október","November","December"]
     Jani = [4.0, 3.8, 4.2, 4.1, 3.8, 4.2, 3.0, 3.6, 4.7, 4.1, 3.7, 4.2]
@@ -37,6 +36,34 @@ def main():
     print(honapok[maxi])
     valasz = maxIndex2(Jani,honapok)
     print(valasz)
+
+    # tördelés - split
+    szoveg = "Jani 2000 10 03"
+    tordelt = szoveg.split(" ")
+    print(tordelt)
+    print (2026-int(tordelt[1]))
+
+    adat = (tordelt[0],int(tordelt[1]), int(tordelt[2]), int(tordelt[3]))
+    print(adat)
+
+    szoveg2 = "2026.02.19 3 Programoas"
+    szoveg2Tordel = szoveg2.split(" ")
+    print(szoveg2Tordel)
+    datum = szoveg2Tordel[0].split(".")
+    print(datum[1])
+
+
+
+    auto = "ABC, Kis Pista, KJ358635265, 1992.03.10".split(",")
+    print(auto)
+    nev = auto[1].split(" ")
+    datum = auto[3].split(".")
+    print(nev[0], datum[0])
+    
+    
+
+
+
 
 main()
 
