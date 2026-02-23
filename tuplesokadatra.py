@@ -30,6 +30,22 @@ def hanyArNagyobb(adatok,ar):
             db += 1
     return db
 
+def maxindexSuly(adatok):
+    maxi = 0
+    for i in range(len(adatok)):
+        if(adatok[i][2]>adatok[maxi][2]):
+            maxi = i
+    return maxi
+
+def gyumolcsKereses(adatok, gyumNev):
+    i = 0
+    while(i<len(adatok) and adatok[i][0] != gyumNev):
+        i += i
+    vane = i < len(adatok)
+    if(vane):
+        return i
+    else:
+        return -1
 
 
 
@@ -46,6 +62,16 @@ def main():
     ar = 1000
     db = hanyArNagyobb(adatok, ar)
     print(db,"gyümölcs ára nagyobb,mint",ar)
+
+    index = maxindexSuly(adatok)
+    print("Legdrágább gyümölcs:",adatok[index][0])
+
+    gyumNev = input("Adja meg a keresett gyümölcs nevét:")
+    keresesindex = gyumolcsKereses(adatok, gyumNev)
+    if(keresesidex < 0):
+        print("Nincs ilyen gyümölcs a listában.")
+    else:
+        print(adatok[keresesindex][2],"q,",adatok[keresesindex][2],"Ft/kg")
 
 
 main()
