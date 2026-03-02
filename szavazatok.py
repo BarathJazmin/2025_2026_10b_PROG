@@ -16,12 +16,49 @@ def kereses(lista, vn, kn):
     else:
         return -1
 
-def osszesSzavazat(adatok):
-    osszeg= 0
-    for i in range(len(adatok)):
-        osszeg += adatok[i][1]
-    return osszeg
 
+def feladat4(adatok):
+    szavazatokSzama = osszesSzavazat(adatok)
+    mindenki = 12345
+    szazalek = szavazatokSzama / mindenki * 100
+    print(f"A választáson {szavazatokSzama} állampolgár,  a jogosultak {round(szazalek,2)}%-a vett részt.")
+
+
+def partDarab(part):
+    db = 0
+    for i in range(len(adatok)):
+        if(adatok[i][4] == part):
+            db += 1
+    return db
+
+
+
+def feladat5(adatok):
+    gyep = partDarab("Gyep")
+    hep = partDarab("HEP")
+    tisz = partDarab("TISZ")
+    zep = partDarab("ZEP")
+    fugg = partDarab("-")
+    print("Gyümölcsevők Pártja",gyep)
+    print("Húsevők pártja",hep)
+    print("Tejivók Szövetsége",tisz)
+    print("Zöldségevők Pártja",zep)
+    print("Független Párt",fugg)
+
+
+def maximumSzavazatok(adatok):
+    maxe = adatok[0][1]
+    for i in range(len(adatok)):
+        if(adatok[i][1]>maxe):
+            maxe = adatok[i][1]
+    return maxe
+
+
+def feladat6(adatok):
+    maxe = maximumSzavazatok(adatok)
+    for i in range(len(adatok)):
+        if(adatok[i][1] == maxe):
+            print(f"{adatok[i][1]} {adatok[i][3]} - {adatok[i][4]}")
 
 def main():
     adatok = listaFeltoltes()
@@ -38,6 +75,10 @@ def main():
         print(adatok[index][1])
     else:
         print("Ilyen nevű képviselő nincs")
+
+
+    
+
 
     
 
